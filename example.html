@@ -1,0 +1,408 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Visual Studio Code Documentation
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #1e1e1e;
+            color: #d4d4d4;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #252526;
+            border-bottom: 1px solid #333;
+        }
+        .header .title {
+            font-size: 20px;
+            color: #ffffff;
+        }
+        .header .nav-links a {
+            color: #d4d4d4;
+            margin-left: 20px;
+            text-decoration: none;
+        }
+        .header .nav-links a:hover {
+            text-decoration: underline;
+        }
+        .header .search-download {
+            display: flex;
+            align-items: center;
+        }
+        .header .search-download input {
+            background-color: #333;
+            border: 1px solid #555;
+            color: #d4d4d4;
+            padding: 5px;
+            margin-right: 10px;
+        }
+        .header .search-download button {
+            background-color: #007acc;
+            border: none;
+            color: #ffffff;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        .container {
+            display: flex;
+        }
+        .sidebar {
+            width: 250px;
+            background-color: #252526;
+            padding: 20px;
+            border-right: 1px solid #333;
+        }
+        .sidebar .menu-item {
+            margin-bottom: 10px;
+            color: #d4d4d4;
+        }
+        .sidebar .menu-item a {
+            color: #d4d4d4;
+            text-decoration: none;
+        }
+        .sidebar .menu-item a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            flex-grow: 1;
+            padding: 20px;
+        }
+        .content h1 {
+            color: #ffffff;
+        }
+        .content p {
+            margin-bottom: 20px;
+        }
+        .content .note {
+            background-color: #333;
+            padding: 10px;
+            border-left: 4px solid #007acc;
+            margin-bottom: 20px;
+        }
+        .content .image-container {
+            background-color: #333;
+            padding: 10px;
+            border: 1px solid #555;
+            margin-bottom: 20px;
+        }
+        .content .image-container img {
+            width: 100%;
+        }
+        .content .image-container .caption {
+            text-align: right;
+            color: #d4d4d4;
+            font-size: 12px;
+        }
+        .content .in-this-article {
+            background-color: #252526;
+            padding: 10px;
+            border: 1px solid #333;
+            margin-bottom: 20px;
+        }
+        .content .in-this-article h2 {
+            font-size: 16px;
+            color: #ffffff;
+        }
+        .content .in-this-article ul {
+            list-style: none;
+            padding: 0;
+        }
+        .content .in-this-article ul li {
+            margin-bottom: 10px;
+        }
+        .content .in-this-article ul li a {
+            color: #d4d4d4;
+            text-decoration: none;
+        }
+        .content .in-this-article ul li a:hover {
+            text-decoration: underline;
+        }
+  </style>
+ </head>
+ <body>
+  <div class="header">
+   <div class="title">
+    Visual Studio Code
+   </div>
+   <div class="nav-links">
+    <a href="#">
+     Docs
+    </a>
+    <a href="#">
+     Updates
+    </a>
+    <a href="#">
+     Blog
+    </a>
+    <a href="#">
+     API
+    </a>
+    <a href="#">
+     Extensions
+    </a>
+    <a href="#">
+     FAQ
+    </a>
+   </div>
+   <div class="search-download">
+    <input placeholder="Search Docs" type="text"/>
+    <button>
+     Download
+    </button>
+   </div>
+  </div>
+  <div class="container">
+   <div class="sidebar">
+    <div class="menu-item">
+     <a href="#">
+      Overview
+     </a>
+    </div>
+    <div class="menu-item">
+     <a href="#">
+      SETUP
+     </a>
+    </div>
+    <div class="menu-item">
+     <a href="#">
+      GET STARTED
+     </a>
+    </div>
+    <div class="menu-item">
+     <a href="#">
+      USER GUIDE
+     </a>
+    </div>
+    <div class="menu-item">
+     <a href="#">
+      SOURCE CONTROL
+     </a>
+    </div>
+    <div class="menu-item">
+     <a href="#">
+      TERMINAL
+     </a>
+    </div>
+    <div class="menu-item">
+     <a href="#">
+      GITHUB COPILOT
+     </a>
+    </div>
+    <div class="menu-item">
+     <a href="#">
+      LANGUAGES
+     </a>
+    </div>
+    <div class="menu-item">
+     <a href="#">
+      NODE.JS / JAVASCRIPT
+     </a>
+    </div>
+    <div class="menu-item">
+     <a href="#">
+      TYPESCRIPT
+     </a>
+    </div>
+    <div class="menu-item">
+     <a href="#">
+      PYTHON
+     </a>
+    </div>
+    <div class="menu-item">
+     <a href="#">
+      JAVA
+     </a>
+    </div>
+    <div class="menu-item">
+     <a href="#">
+      C++
+     </a>
+    </div>
+    <div class="menu-item">
+     <a href="#">
+      C#
+     </a>
+    </div>
+    <div class="menu-item">
+     <a href="#">
+      DOCKER
+     </a>
+    </div>
+    <div class="menu-item">
+     <a href="#">
+      DATA SCIENCE
+     </a>
+    </div>
+    <div class="menu-item">
+     <a href="#">
+      AZURE
+     </a>
+    </div>
+    <div class="menu-item">
+     <a href="#">
+      REMOTE
+     </a>
+    </div>
+    <div class="menu-item">
+     <a href="#">
+      DEV CONTAINERS
+     </a>
+    </div>
+    <div class="menu-item">
+     <a href="#">
+      Overview
+     </a>
+    </div>
+    <div class="menu-item">
+     <a href="#">
+      Tutorial
+     </a>
+    </div>
+    <div class="menu-item">
+     <a href="#">
+      Attach to Container
+     </a>
+    </div>
+    <div class="menu-item">
+     <a href="#">
+      Create a Dev Container
+     </a>
+    </div>
+    <div class="menu-item">
+     <a href="#">
+      Advanced Containers
+     </a>
+    </div>
+   </div>
+   <div class="content">
+    <p>
+     Version 1.93 is now available! Read about the new features and fixes from August.
+    </p>
+    <h1>
+     Attach to a running container
+    </h1>
+    <p>
+     Visual Studio Code can create and start containers for you but that may not match your workflow and you may prefer to "attach" VS Code to an already running Docker container - regardless of how it was started. Once attached, you can install extensions, edit, and debug like you can when you open a folder in a container using
+     <a href="#">
+      devcontainer.json
+     </a>
+     .
+    </p>
+    <h2>
+     Attach to a Docker container
+    </h2>
+    <p>
+     To attach to a Docker container, either select
+     <strong>
+      Dev Containers: Attach to Running Container...
+     </strong>
+     from the Command Palette (
+     <strong>
+      F1
+     </strong>
+     ) or use the
+     <strong>
+      Remote Explorer
+     </strong>
+     in the Activity Bar and from the
+     <strong>
+      Containers
+     </strong>
+     view, select the
+     <strong>
+      Attach to Container
+     </strong>
+     inline action on the container you want to connect to.
+    </p>
+    <div class="image-container">
+     <img alt="Screenshot of Remote Explorer showing containers view with various containers listed" height="400" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-BVbpSZmLndA7MfHIxv2ahIKS/user-IBY8IaMXtVn7IVIdZeyvjx16/img-rzzr77pJxEcKBOMzdy6vBcoQ.png?st=2024-09-13T06%3A23%3A32Z&amp;se=2024-09-13T08%3A23%3A32Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-12T23%3A21%3A08Z&amp;ske=2024-09-13T23%3A21%3A08Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=rQpzcaAbr5wcLIBYw1PyuIsFkXZKt9jBqU/5bUCmn0k%3D" width="600"/>
+     <div class="caption">
+      Attach to Container
+     </div>
+    </div>
+    <div class="note">
+     <p>
+      Note: When using Alpine Linux containers, some extensions may not work due to
+      <code>
+       glibc
+      </code>
+      dependencies in native code inside the extension.
+     </p>
+    </div>
+    <div class="in-this-article">
+     <h2>
+      IN THIS ARTICLE
+     </h2>
+     <ul>
+      <li>
+       <a href="#">
+        Attach to a Docker container
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Attached container configuration files
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Attached container configuration reference
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Attach to a container in a Kubernetes cluster
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Next steps
+       </a>
+      </li>
+     </ul>
+    </div>
+    <ul>
+     <li>
+      <a href="#">
+       Subscribe
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       Ask questions
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       Follow @code
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       Request features
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       Report issues
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       Watch videos
+      </a>
+     </li>
+    </ul>
+   </div>
+  </div>
+ </body>
+</html>
